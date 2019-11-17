@@ -14,7 +14,7 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
 
-  //.get('/', (req, res) => res.render('pages/index'))
+  .get('/', (req, res) => res.render('pages/index'))
 
   //.get('/getRate', (req, res) => res.render('pages/result'))
   .get('/getRate', calculateRate)
